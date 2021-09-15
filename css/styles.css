@@ -1,5 +1,13 @@
+:root {
+  --accent-color: #2196f3;
+  --primary-title-text: #212121;
+  --primary-text-color: #757575;
+  --secondary-title-text: #ffffff;
+}
+
 body {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif, Raleway, sans-serif;
+  color: var(--primary-text-color);
 }
 
 /* header */
@@ -9,7 +17,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #2196f3;
+  color: var(--accent-color);
   text-decoration: none;
 }
 
@@ -31,13 +39,13 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--primary-title-text);
   text-decoration: none;
 }
 
 .nav-item-link:focus,
 .nav-item-link:hover {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .contact-item-link {
@@ -45,13 +53,13 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--primary-text-color);
   text-decoration: none;
 }
 
 .contact-item-link:hover,
 .contact-item-link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 /* hero */
 
@@ -62,15 +70,16 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--secondary-title-text);
 }
 .btn {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--secondary-title-text);
+  cursor: pointer;
 }
 
 /* advantages */
@@ -84,13 +93,13 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--primary-title-text);
 }
 .advantages-text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 /* what we really do */
@@ -99,7 +108,7 @@ body {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-title-text);
 }
 .work-list {
   list-style: none;
@@ -113,13 +122,13 @@ body {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--primary-title-text);
 }
 .employee-position {
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--secondary-text-color);
 }
 
 /* contact us */
@@ -133,7 +142,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--secondary-title-text);
   text-decoration: none;
 }
 .tel-link,
@@ -145,4 +154,16 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+.address-link:focus,
+.address-link:hover {
+  color: var(--accent-color);
+}
+.tel-link:focus,
+.tel-link:hover {
+  color: var(--accent-color);
+}
+.mail-link:focus,
+.mail-link:hover {
+  color: var(--accent-color);
 }
