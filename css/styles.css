@@ -167,3 +167,32 @@ body {
 .mail-link:hover {
   color: var(--accent-color);
 }
+
+/* portfolio main */
+
+.button-title,
+.portfolio-cards {
+  list-style: none;
+}
+.button-item {
+  background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-title-text);
+}
+.portfolio-card-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-title-text);
+}
+.portfolio-card-description {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
