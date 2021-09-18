@@ -121,6 +121,9 @@ body {
   list-style: none;
 }
 /* our team */
+.section-work {
+  background-color: var(--second-background-color);
+}
 .employee-name {
   font-weight: 500;
   font-size: 16px;
