@@ -90,9 +90,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-
 /* advantages */
-
 .advantages-item {
   font-weight: 700;
   font-size: 14px;
@@ -107,7 +105,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
 /* what we really do */
 .section-title {
   font-weight: 700;
@@ -137,7 +134,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-
 /* contact us */
 .footer {
   background-color: var(--background-color);
@@ -168,9 +164,7 @@ body {
 .mail-link:hover {
   color: var(--accent-color);
 }
-
 /* portfolio main */
-
 .button-title,
 .portfolio-cards {
   list-style: none;
