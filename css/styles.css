@@ -3,10 +3,14 @@
   --primary-title-text: #212121;
   --primary-text-color: #757575;
   --secondary-title-text: #ffffff;
+  --background-color: #2f303a;
+  --third-text-color: #000000;
+  --second-background-color: #f5f4fa;
 }
 
 body {
-  font-family: Roboto, sans-serif, Raleway, sans-serif;
+  font-family: Roboto, sans-serif;
+  background-color: var(--secondary-title-text);
   color: var(--primary-text-color);
 }
 
@@ -20,18 +24,20 @@ body {
   color: var(--accent-color);
   text-decoration: none;
 }
-
 .second-logo {
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--third-text-color);
+}
+.white-logo {
+  color: var(--secondary-title-text);
+}
+.nav-item-link.current {
+  color: var(--accent-color);
 }
 
 .nav-items,
-.contact-items {
+.contact-items,
+.advantages-list,
+.address-list {
   list-style: none;
 }
 .nav-item-link {
@@ -44,7 +50,9 @@ body {
 }
 
 .nav-item-link:focus,
-.nav-item-link:hover {
+.nav-item-link:hover,
+.contact-item-link:hover,
+.contact-item-link:focus {
   color: var(--accent-color);
 }
 
@@ -57,14 +65,12 @@ body {
   text-decoration: none;
 }
 
-.contact-item-link:hover,
-.contact-item-link:focus {
-  color: var(--accent-color);
-}
 /* hero */
+.hero {
+  background-color: var(--background-color);
+}
 
 .hero-title {
-  background-color: gray;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -80,13 +86,13 @@ body {
   letter-spacing: 0.06em;
   color: var(--secondary-title-text);
   cursor: pointer;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 /* advantages */
 
-.advantages-list {
-  list-style: none;
-}
 .advantages-item {
   font-weight: 700;
   font-size: 14px;
@@ -110,13 +116,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-title-text);
 }
-.work-list {
-  list-style: none;
-}
-/* our team */
+.work-list,
 .team-cards {
   list-style: none;
 }
+/* our team */
 .employee-name {
   font-weight: 500;
   font-size: 16px;
@@ -132,12 +136,11 @@ body {
 }
 
 /* contact us */
-.address-list {
-  background-color: #2f303a;
+.footer {
+  background-color: var(--background-color);
   list-style: none;
 }
 .address-link {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -147,7 +150,6 @@ body {
 }
 .tel-link,
 .mail-link {
-  font-family: Roboto, sans-serif;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
@@ -156,13 +158,9 @@ body {
   text-decoration: none;
 }
 .address-link:focus,
-.address-link:hover {
-  color: var(--accent-color);
-}
+.address-link:hover,
 .tel-link:focus,
-.tel-link:hover {
-  color: var(--accent-color);
-}
+.tel-link:hover,
 .mail-link:focus,
 .mail-link:hover {
   color: var(--accent-color);
@@ -175,12 +173,24 @@ body {
   list-style: none;
 }
 .button-item {
-  background-color: var(--accent-color);
+  background-color: var(--second-background-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  color: var(--primary-title-text);
+  cursor: pointer;
+  border: none;
+}
+.button-item.current {
+  background-color: var(--accent-color);
+  color: var(--secondary-title-text);
+}
+
+.button-item:hover,
+.button-item:focus {
+  background-color: var(--accent-color);
   color: var(--secondary-title-text);
 }
 .portfolio-card-title {
